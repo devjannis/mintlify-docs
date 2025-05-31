@@ -1,0 +1,96 @@
+---
+title: "Remove All"
+description: "Quickly delete all your keywords at once"
+---
+
+Use the `/keywords remove_all` command to delete all your existing keywords in one action.
+
+```
+/keywords remove_all
+```
+
+<Warning>This action will permanently delete ALL your keywords and cannot be undone. Use with caution!</Warning>
+
+## How It Works
+
+<Steps>
+  <Step title="Send the Command">
+    Execute `/keywords remove_all` in any Discord channel where Pynqo is available.
+  </Step>
+  <Step title="Confirm the Action">
+    A confirmation prompt will appear asking you to verify that you want to delete all your keywords. This safety measure prevents accidental deletion.
+    
+    <Info>Take a moment to consider if you really want to remove all keywords - this action is irreversible.</Info>
+  </Step>
+  <Step title="Complete Removal">
+    After confirming, all your keywords and their associated exclude values will be permanently deleted. You'll receive a confirmation message showing the action was successful.
+    
+    <Check>All keywords have been removed from your monitoring list.</Check>
+  </Step>
+</Steps>
+
+## When to Use This Command
+
+<Accordion title="Starting Fresh">
+Perfect when you want to completely reset your keyword monitoring setup and start over with a clean slate.
+</Accordion>
+
+<Accordion title="Major Interest Changes">
+Use when your interests or monitoring needs have significantly changed and most of your current keywords are no longer relevant.
+</Accordion>
+
+<Accordion title="Account Cleanup">
+Ideal for cleaning up your account when you no longer want to monitor any keywords or are taking a break from keyword notifications.
+</Accordion>
+
+<Accordion title="Troubleshooting">
+Sometimes useful when experiencing issues with keyword notifications and you want to start with a fresh configuration.
+</Accordion>
+
+## Important Considerations
+
+<CardGroup cols={2}>
+  <Card title="No Undo Option" icon="safety">
+    Once confirmed, this action cannot be reversed. All keywords are permanently deleted.
+  </Card>
+  <Card title="Includes Exclude Values" icon="filter">
+    All exclude values associated with your keywords are also removed.
+  </Card>
+  <Card title="Immediate Effect" icon="bolt">
+    Keyword monitoring stops immediately after removal - no more notifications.
+  </Card>
+  <Card title="Fresh Start" icon="running">
+    You'll need to add new keywords using `/keywords manage` to resume monitoring.
+  </Card>
+</CardGroup>
+
+## Alternative Options
+
+Before using this command, consider these alternatives:
+
+<Note>
+If you only want to remove specific keywords, use `/keywords manage` to selectively delete individual keywords instead of removing everything.
+</Note>
+
+<Tip>
+You can use `/keywords list` to review your current keywords before deciding whether to remove them all.
+</Tip>
+
+## After Removal
+
+Once you've removed all keywords, you might want to:
+
+<CardGroup cols={2}>
+  <Card title="Add New Keywords" icon="plus" href="/user-guides/discord-commands/keywords/manage">
+    Start fresh with `/keywords manage` to add keywords that match your current interests
+  </Card>
+  <Card title="Review Setup" icon="list" href="/user-guides/discord-commands/keywords/list">
+    Use `/keywords list` to confirm all keywords have been removed
+  </Card>
+</CardGroup>
+
+## Safety Reminder
+
+<Warning>
+Remember: This command removes ALL keywords permanently. Make sure this is what you want before confirming the action. There's no way to recover your keywords once they're deleted.
+</Warning>

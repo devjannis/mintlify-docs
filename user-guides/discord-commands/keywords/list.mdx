@@ -1,0 +1,74 @@
+---
+title: "List"
+description: "View all your keywords in an organized list"
+---
+
+Use the `/keywords list` command to view all your existing keywords in a paginated list format.
+
+```
+/keywords list
+```
+
+<Info>This command displays all your keywords in an easy-to-read list with navigation controls.</Info>
+
+## How It Works
+
+<Steps>
+  <Step title="Send the Command">
+    Execute `/keywords list` in any Discord channel where Pynqo is available to display your keyword list.
+  </Step>
+  <Step title="View Your Keywords">
+    A paginated embed will appear showing your keywords with their current status. Each page displays a limited number of keywords for easy viewing and includes exclude values if you have them set up.
+    
+    <Tip>The list shows all your keywords in an organized format, making it easy to review what you have saved and their current settings.</Tip>
+  </Step>
+  <Step title="Navigate Through Pages">
+    If you have many keywords, use the pagination controls (◀️ and ▶️ buttons) to navigate between pages and view all your keywords.
+    
+    <Note>Page numbers are displayed at the bottom of the embed to help you track your position in the list.</Note>
+  </Step>
+</Steps>
+
+<Frame>
+    <img src="/images/KeywordListEmbed.png" alt="Keyword list embed showing paginated keywords with navigation controls" />
+</Frame>
+
+<Check>Perfect for reviewing your entire keyword collection and their settings at a glance</Check>
+
+<Warning>This command only displays your keywords - use `/keywords manage` to add, edit, or remove keywords.</Warning>
+
+## Features
+
+<Accordion title="Smart Pagination">
+Keywords are automatically split across multiple pages for better readability. Each page shows up to 10 keywords to prevent overwhelming displays when you have many keywords saved.
+</Accordion>
+
+<Accordion title="Complete Overview">
+See all your saved keywords along with their exclude values in one organized view. The list command provides a comprehensive look at your entire keyword collection and current configuration.
+</Accordion>
+
+<Accordion title="Intuitive Navigation">
+Move between pages using familiar arrow button controls (◀️ ▶️). The current page number and total pages are clearly displayed for easy reference.
+</Accordion>
+
+<Accordion title="When to Use This Command">
+The list command is ideal when you want to:
+- **Review your setup** - See all keywords and their exclude values
+- **Avoid duplicates** - Check if a keyword already exists before adding it
+- **Get an overview** - Understand your current monitoring scope
+- **Plan changes** - Identify keywords to modify or remove
+- **Share your setup** - Show others what topics you're monitoring
+</Accordion>
+
+## Quick Actions
+
+After viewing your list, you might want to:
+
+<CardGroup cols={2}>
+  <Card title="Add Keywords" icon="plus" href="/user-guides/discord-commands/keywords/manage">
+    Use `/keywords manage` to add new keywords to your list
+  </Card>
+  <Card title="Remove Keywords" icon="trash" href="/user-guides/discord-commands/keywords/manage">
+    Delete keywords you no longer need through the manage interface
+  </Card>
+</CardGroup>

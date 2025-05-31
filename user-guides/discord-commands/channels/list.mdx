@@ -1,0 +1,91 @@
+---
+title: "List Channels"
+description: "View all channels and categories you're currently monitoring"
+---
+
+Use the `/channels list` command to view all the Discord channels and categories that Pynqo is currently monitoring for your keywords.
+
+```
+/channels list
+```
+
+<Info>This command shows your complete monitoring setup, helping you understand what channels Pynqo is scanning for your keywords.</Info>
+
+## How It Works
+
+<Steps>
+  <Step title="Send the Command">
+    Execute `/channels list` in any Discord channel where Pynqo is available.
+  </Step>
+  <Step title="View Your Monitoring Setup">
+    An organized list will appear showing all channels and categories you've added, along with their custom names and monitoring status.
+    
+    <Tip>The list shows both individual channels and entire categories you're monitoring across different servers.</Tip>
+  </Step>
+  <Step title="Review Your Configuration">
+    Check which channels are active and verify your monitoring coverage is complete for your needs.
+    
+    <Note>If you don't see any channels listed, you'll need to add some using `/channels add` for Pynqo to work.</Note>
+  </Step>
+</Steps>
+
+## What You'll See
+
+The channel list displays:
+
+<CardGroup cols={2}>
+  <Card title="Channel Names" icon="hashtag">
+    Individual channels you're monitoring with their custom names
+  </Card>
+  <Card title="Categories" icon="folder">
+    Entire categories being monitored, including all channels within them
+  </Card>
+  <Card title="Server Information" icon="server">
+    Which Discord server each monitored channel/category belongs to
+  </Card>
+  <Card title="Custom Labels" icon="tag">
+    The custom names you assigned when adding each monitoring group
+  </Card>
+</CardGroup>
+
+## Understanding Your List
+
+<Accordion title="Individual Channels">
+These show up as specific channel names (like #general, #announcements) and only monitor that particular channel for your keywords.
+</Accordion>
+
+<Accordion title="Category Monitoring">
+Categories appear with their category name and automatically include all channels within that category, including new ones added later.
+</Accordion>
+
+<Accordion title="Custom Names">
+The names you provided when adding channels (like "MONITORS CUSTOM" or "SNEAKER ALERTS") help you identify different monitoring groups.
+</Accordion>
+
+<Accordion title="Empty List">
+If no channels appear, Pynqo isn't monitoring anything. You'll need to use `/channels add` to configure monitoring before receiving keyword notifications.
+</Accordion>
+
+## Common Scenarios
+
+<Check>**Active Monitoring**: You see multiple channels/categories listed - Pynqo is actively scanning these for your keywords</Check>
+
+<Warning>**No Channels Listed**: Your monitoring isn't configured yet - use `/channels add` to set up monitoring</Warning>
+
+<Info>**Mixed Setup**: You have both individual channels and categories - this gives you flexible monitoring coverage</Info>
+
+## After Reviewing Your List
+
+Based on what you see, you might want to:
+
+<CardGroup cols={3}>
+  <Card title="Add More Channels" icon="plus" href="/user-guides/discord-commands/channels/add">
+    Add additional channels or categories to expand your monitoring
+  </Card>
+  <Card title="Remove Channels" icon="trash" href="/user-guides/discord-commands/channels/remove">
+    Remove channels you no longer want to monitor
+  </Card>
+  <Card title="Manage Keywords" icon="tags" href="/user-guides/discord-commands/keywords/manage">
+    Update your keywords to match your channel monitoring setup
+  </Card>
+</CardGroup>

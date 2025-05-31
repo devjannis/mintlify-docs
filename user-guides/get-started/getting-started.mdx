@@ -1,11 +1,82 @@
 ---
-title: "Getting started"
+title: "Getting Started"
 sidebarTitle: "Getting Started"
-mode: "custom"
+description: "This guide will help you set everything up in just a few steps."
+tag: "Important"
 ---
 
-1. Join a server that has Pynqo installed
-2. <Tooltip tip="Important!">[Authorize Pynqo](https://discord.com/oauth2/authorize?client_id=1357613138899374231)  </Tooltip>
+<Info>
+Get up and running with Pynqo in under 2 minutes! Follow these simple steps to start monitoring your keywords across Discord.
+</Info>
 
-Now open your server and you are ready to go.
+## Quick Setup
 
+<Steps>
+  <Step title="Join a Pynqo-Enabled Server">
+    Find and join a Discord server that has Pynqo installed. You can identify these servers by looking for Pynqo in the member list or server integrations.
+    
+    <Tip>Ask server admins if Pynqo is available, or look for servers that advertise keyword monitoring features.</Tip>
+  </Step>
+  
+  <Step title="Authorize Pynqo">
+    <Tooltip tip="This allows Pynqo to send you direct messages with keyword notifications">
+      [Click here to authorize Pynqo](https://discord.com/oauth2/authorize?client_id=1357613138899374231)
+    </Tooltip>
+    
+    This step is crucial - it allows Pynqo to send you personal notifications when your keywords are detected.
+    
+    <Warning>Make sure you're logged into the correct Discord account before authorizing.</Warning>
+  </Step>
+  
+  <Step title="Set Up Your Keywords">
+    Now you can start adding keywords that you want to monitor. Use the `/keywords manage` command to get started.
+    
+    ```
+    /keywords manage
+    ```
+    
+    <Note>You can add multiple keywords at once by separating them with commas.</Note>
+  </Step>
+  
+  <Step title="Relax and Get Notified">
+    That's it! Pynqo will now monitor conversations for your keywords and send you instant notifications. No more watching chats 24/7!
+  </Step>
+</Steps>
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card title="Manage Keywords" icon="tags" href="/keywords/manage">
+    Learn how to add, edit, and remove your keywords
+  </Card>
+  <Card title="View Your Keywords" icon="list" href="/keywords/list">
+    See all your saved keywords in one place
+  </Card>
+</CardGroup>
+
+## Troubleshooting
+
+<Accordion title="I don't see Pynqo in any servers">
+Pynqo needs to be installed by server administrators. You can:
+- Ask server admins to add Pynqo
+- Join communities that already have Pynqo installed
+- Look for servers advertising keyword monitoring features
+</Accordion>
+
+<Accordion title="Authorization isn't working">
+Make sure you:
+- Are logged into Discord in your browser
+- Have the correct permissions in your Discord account
+- Are clicking the authorization link while logged into the right account
+</Accordion>
+
+<Accordion title="Not receiving notifications">
+Check that:
+- You've completed the authorization step
+- Your keywords are properly set up using `/keywords manage`
+- Your Discord DM settings allow messages from server members
+</Accordion>
+
+<Check>
+You're all set! Pynqo is now actively monitoring for your keywords across Discord servers.
+</Check>

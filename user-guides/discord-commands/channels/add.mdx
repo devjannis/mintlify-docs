@@ -1,0 +1,104 @@
+---
+title: "Add Channels"
+description: "Add Discord channels or categories for Pynqo to monitor"
+---
+
+Use the `/channels add` command to add individual channels or entire categories that Pynqo should monitor for your keywords.
+
+```
+/channels add
+```
+
+<Info>Adding channels is essential - without configured channels, Pynqo won't monitor anything and you won't receive notifications.</Info>
+
+## How It Works
+
+<Steps>
+  <Step title="Send the Command">
+    Execute `/channels add` in any Discord channel where Pynqo is available.
+  </Step>
+  <Step title="Select Channel or Category">
+    A selection menu will appear allowing you to choose between individual channels or entire categories from the current server.
+    
+    <Tip>We recommend selecting categories rather than individual channels for comprehensive monitoring coverage.</Tip>
+  </Step>
+  <Step title="Confirm Addition">
+    Pynqo will confirm that your channel or category has been added to your monitoring list and is now being scanned for keywords.
+  </Step>
+</Steps>
+
+## Examples
+
+Here are some common monitoring setups:
+
+<CodeGroup>
+```bash Category
+/channels add >>> select category >>> TEXT CHATS
+```
+
+```bash Channel
+/channels add >>> select specific channel >>> general-chat
+```
+</CodeGroup>
+
+## Categories vs Individual Channels
+
+<Accordion title="Why Choose Categories?">
+**Comprehensive Coverage**: Categories automatically include all channels within them, including new channels added later.
+
+**Future-Proof**: When new channels are created in a monitored category, they're automatically included in your monitoring.
+
+**Easier Management**: Monitor entire sections of a server without managing individual channels.
+</Accordion>
+
+<Accordion title="When to Use Individual Channels?">
+**Specific Focus**: When you only want to monitor one particular channel in a category.
+
+**High-Traffic Categories**: If a category has many channels but you only care about specific ones.
+
+**Testing**: When setting up monitoring for the first time and want to test with a single channel.
+</Accordion>
+
+## Naming Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Be Descriptive" icon="tag">
+    Use names that clearly indicate what you're monitoring (e.g., "SNEAKER DROPS", "TECH NEWS")
+  </Card>
+  <Card title="Stay Organized" icon="folder-open">
+    Use consistent naming patterns to keep your monitoring list organized
+  </Card>
+  <Card title="Include Purpose" icon="target">
+    Add the main topic or brand you're tracking (e.g., "MONITORS SUPREME")
+  </Card>
+  <Card title="Keep It Short" icon="compress">
+    Use concise names that are easy to identify in your channel list
+  </Card>
+</CardGroup>
+
+## What Happens Next?
+
+Once you add channels or categories:
+
+<Check>Pynqo immediately starts monitoring those channels for your keywords</Check>
+
+<Check>You'll receive notifications when keywords are detected in monitored channels</Check>
+
+<Check>The channels appear in your monitoring list (viewable with `/channels list`)</Check>
+
+## Important Notes
+
+<Warning>You must have keywords set up for monitoring to work. Use `/keywords manage` to add keywords if you haven't already.</Warning>
+
+<Tip>You can add multiple channels and categories - there's no limit to how many you can monitor simultaneously.</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="View Your Channels" icon="list" href="/user-guides/discord-commands/channels/list">
+    Use `/channels list` to see all your monitored channels and categories
+  </Card>
+  <Card title="Set Up Keywords" icon="tags" href="/user-guides/discord-commands/keywords/manage">
+    Add keywords to monitor in your newly configured channels
+  </Card>
+</CardGroup>

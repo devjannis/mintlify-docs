@@ -1,0 +1,105 @@
+---
+title: "Remove Channels"
+description: "Stop monitoring specific Discord channels or categories"
+---
+
+Use the `/channels remove` command to stop monitoring specific Discord channels or entire categories that you previously added.
+
+```
+/channels remove
+```
+
+<Info>This command allows you to selectively remove channels or categories from your monitoring list without affecting your other monitored locations.</Info>
+
+## How It Works
+
+<Steps>
+  <Step title="Send the Command">
+    Execute `/channels remove` in any Discord channel where Pynqo is available.
+  </Step>
+  <Step title="Choose What to Remove">
+    A selection menu will appear showing all your currently monitored channels and categories. Select the ones you want to stop monitoring.
+    
+    <Tip>You can see your current monitoring setup using `/channels list` before removing items.</Tip>
+  </Step>
+  <Step title="Confirm Removal">
+    Pynqo will confirm the removal and immediately stop monitoring the selected channels or categories for your keywords.
+    
+    <Check>The removed channels/categories will no longer generate keyword notifications.</Check>
+  </Step>
+</Steps>
+
+## What You Can Remove
+
+<CardGroup cols={2}>
+  <Card title="Individual Channels" icon="hashtag">
+    Stop monitoring specific channels while keeping other channels active
+  </Card>
+  <Card title="Entire Categories" icon="folder">
+    Remove all channels within a category from monitoring at once
+  </Card>
+</CardGroup>
+
+## When to Remove Channels
+
+<Accordion title="Interest Changes">
+When your interests shift and you no longer want notifications from certain channels or topics.
+</Accordion>
+
+<Accordion title="Reducing Noise">
+If you're getting too many notifications from high-traffic channels that aren't providing valuable alerts.
+</Accordion>
+
+<Accordion title="Server Changes">
+When you leave servers or when channels become inactive and no longer relevant to your monitoring needs.
+</Accordion>
+
+<Accordion title="Refining Setup">
+As you fine-tune your monitoring setup to focus on the most important channels for your keywords.
+</Accordion>
+
+## Important Considerations
+
+<Warning>Removing a category stops monitoring ALL channels within that category, including any new channels that might be added later.</Warning>
+
+<Note>Removing channels doesn't affect your keywords - they remain active for any other channels you're still monitoring.</Note>
+
+<Tip>Consider using `/channels list` first to review what you're currently monitoring before removing anything.</Tip>
+
+## Effects of Removal
+
+After removing channels or categories:
+
+<Check>**Immediate**: Pynqo stops scanning those channels for keywords right away</Check>
+
+<Check>**No More Notifications**: You won't receive alerts from removed channels, even if your keywords appear there</Check>
+
+<Check>**Other Channels Unaffected**: Your remaining monitored channels continue working normally</Check>
+
+<Warning>**Permanent**: You'll need to use `/channels add` again if you want to resume monitoring removed channels</Warning>
+
+## Alternative Actions
+
+Before removing channels, consider these alternatives:
+
+<CardGroup cols={2}>
+  <Card title="Adjust Keywords" icon="edit" href="/user-guides/discord-commands/keywords/managee">
+    Modify your keywords instead of removing channels if the issue is keyword-specific
+  </Card>
+  <Card title="Add Exclude Values" icon="filter" href="/user-guides/discord-commands/keywords/manage">
+    Use exclude values to reduce unwanted notifications while keeping channel monitoring
+  </Card>
+</CardGroup>
+
+## After Removal
+
+Once you've removed channels, you might want to:
+
+<CardGroup cols={2}>
+  <Card title="Verify Changes" icon="list" href="/user-guides/discord-commands/channels/list">
+    Use `/channels list` to confirm the channels were removed successfully
+  </Card>
+  <Card title="Add New Channels" icon="plus" href="/user-guides/discord-commands/channels/add">
+    Add different channels or categories that better match your current needs
+  </Card>
+</CardGroup>

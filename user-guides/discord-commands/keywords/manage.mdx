@@ -1,0 +1,83 @@
+---
+title: "Manage"
+description: "Add, edit, or remove your keywords"
+---
+
+Use the `/keywords manage` command to add, edit, or remove your existing keywords.
+
+```
+/keywords manage
+```
+
+<Info>This command opens an interactive interface for managing all your keywords in one place.</Info>
+
+## How It Works
+
+<Steps>
+  <Step title="Send the Command">
+    Execute `/keywords manage` in any Discord channel where Pynqo is available to open the keyword management interface.
+  </Step>
+  <Step title="Enter Your Keywords">
+    A management screen will appear where you can input your keywords. Separate multiple keywords with commas (e.g., `gaming, streaming, tutorials`).
+    
+    <Tip>You can add multiple keywords at once by separating them with commas - no need to run the command multiple times!</Tip>
+
+    <Frame>
+        <img src="/images/KeywordManager.png" alt="Keyword management interface showing input field" />
+    </Frame>
+  </Step>
+  <Step title="Review and Confirm">
+    After submitting your keywords, an embed will appear showing:
+    - The status of each keyword (added or already exists)
+    - Your current keyword list with exclude values
+    - Remove buttons to delete keywords you no longer need
+    
+    <Frame>
+        <img src="/images/KeywordEmbed.png" alt="Keyword confirmation embed with status and remove options" />
+    </Frame>
+  </Step>
+</Steps>
+
+## Status Messages
+
+After managing your keywords, you'll see one of these status messages:
+
+| Status | Description |
+|--------|-------------|
+| `Keyword added!` | The keyword was successfully added to your list |
+| `Keyword already added!` | The keyword already exists in your list |
+
+<Warning>Keywords are case-insensitive, so "Gaming" and "gaming" will be treated as the same keyword.</Warning>
+
+## Understanding Exclude Values
+
+<Accordion title="What are exclude values?">
+Exclude values are words or phrases that, when present with your keyword, will prevent a notification from being sent. This helps reduce false positives and spam notifications.
+</Accordion>
+
+<Accordion title="How do exclude values work?">
+If your keyword is "python" but you want to exclude mentions of "python snake", you can add "snake" as an exclude value. Messages containing both "python" and "snake" won't trigger notifications.
+</Accordion>
+
+<Accordion title="Managing exclude values">
+You can view and manage your exclude values through the keyword management interface. Each keyword can have multiple exclude values to fine-tune your notifications.
+</Accordion>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Keep It Clean" icon="broom">
+    Remove extra spaces around keywords for optimal results
+  </Card>
+  <Card title="Stay Organized" icon="folder">
+    Regularly review and remove unused keywords to keep your list manageable
+  </Card>
+  <Card title="Use Exclude Values" icon="filter">
+    Add exclude values to prevent unwanted notifications from common false positives
+  </Card>
+  <Card title="Test Your Keywords" icon="flask">
+    Monitor your notifications for a few days and adjust keywords as needed
+  </Card>
+</CardGroup>
+
+<Note>Remember to periodically review your keyword list to ensure it stays relevant to your current interests and needs.</Note>

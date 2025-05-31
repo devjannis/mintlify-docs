@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "mint",
   "name": "Pynqo Docs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/logo.png",
   "navigation": {
     "tabs": [
       {
@@ -19,14 +19,30 @@
               "user-guides/get-started/index",
               "user-guides/get-started/getting-started"
             ]
+          },
+          {
+            "group": "Keywords Commands",
+            "pages": [
+              "user-guides/discord-commands/keywords/manage",
+              "user-guides/discord-commands/keywords/list",
+              "user-guides/discord-commands/keywords/remove_all"
+            ]
+          },
+          {
+            "group": "Channels Commands",
+            "pages": [
+              "user-guides/discord-commands/channels/add",
+              "user-guides/discord-commands/channels/remove",
+              "user-guides/discord-commands/channels/list"
+            ]
           }
         ]
       }
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logo.png",
+    "dark": "/logo/logo.png"
   },
   "navbar": {
     "links": [
