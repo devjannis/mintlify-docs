@@ -11,11 +11,12 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Guild Guides",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
+              "user-guides/get-started/index"
             ]
           },
           {
@@ -32,7 +33,7 @@
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "User Guids",
         "groups": [
           {
             "group": "API Documentation",
