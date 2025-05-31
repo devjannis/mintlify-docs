@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Pynqo Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#F1F5F9",
+    "light": "#F1F5F9",
+    "dark": "#1F2937"
   },
   "favicon": "/logo/logo.png",
   "navigation": {
